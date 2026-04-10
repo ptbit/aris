@@ -389,6 +389,10 @@ footer {
   background: linear-gradient(78.78deg, #dcfdde 0%, #f5ffee 100%);
 }
 
+.facebook__container {
+  padding: 100px 15px;
+}
+
 .footer {
   height: 100vh;
 }
@@ -412,7 +416,8 @@ footer {
   .reviews__title {
     margin-bottom: 80px;
   }
-  .about__container {
+  .about__container,
+  .facebook__container {
     padding: 80px 15px;
   }
 }
@@ -523,7 +528,8 @@ footer {
   .reviews__title {
     margin-bottom: 60px;
   }
-  .about__container {
+  .about__container,
+  .facebook__container {
     padding: 65px 15px;
   }
   .why__cube {
