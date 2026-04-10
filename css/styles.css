@@ -393,6 +393,66 @@ footer {
   padding: 100px 15px;
 }
 
+.can-help__container {
+  max-width: 1190px;
+  padding: 0 10px 100px;
+}
+
+.can-help__list {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.can-help__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(78.78deg, #dcfdde 0%, #f5ffee 100%);
+  border-radius: 30px;
+  padding: 30px 15px;
+}
+
+.can-help__item-pic {
+  margin-bottom: 30px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.can-help__item-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  text-align: center;
+}
+
+.can-help__item-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  color: #222222;
+  text-align: center;
+}
+
+.can-help__footer {
+  margin: 0 auto;
+  max-width: 945px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+}
+.can-help__footer span {
+  color: #ff4d00;
+}
+
 .footer {
   height: 100vh;
 }
@@ -419,6 +479,12 @@ footer {
   .about__container,
   .facebook__container {
     padding: 80px 15px;
+  }
+  .can-help__list {
+    flex-wrap: wrap;
+  }
+  .can-help__item {
+    width: 48%;
   }
 }
 @media screen and (max-width: 970px) {
@@ -513,6 +579,11 @@ footer {
   .reviews__item iframe {
     width: 100%;
     height: 350px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .can-help__item {
+    width: 100%;
   }
 }
 @media screen and (max-width: 775px) {
