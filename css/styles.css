@@ -1,0 +1,297 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 100%;
+}
+
+main {
+  background-color: seagreen;
+}
+
+footer {
+  background-color: yellow;
+}
+
+.button {
+  padding: 33px 50px;
+  font-family: "Montserrat Alternates";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  text-transform: uppercase;
+  background: #fd9601;
+  border-radius: 50px;
+  color: white;
+  transition: opacity 0.3s ease-in-out;
+}
+.button:hover {
+  opacity: 0.7;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 15px;
+  gap: 15px;
+}
+
+.header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 162px;
+}
+.header__logo img {
+  width: 100%;
+}
+
+.header__menu {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__menu-list {
+  display: flex;
+  gap: 40px;
+}
+
+.header__menu-link {
+  font-size: 20px;
+}
+
+.header__tel-number {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.header__burger {
+  display: none;
+  min-width: 40px;
+  max-width: 40px;
+  height: 40px;
+  padding: 5px;
+  background-color: transparent;
+  transition: background-color 0.5s ease-in-out;
+  cursor: pointer;
+  border-radius: 5px;
+  position: absolute;
+  right: 25px;
+  z-index: 3;
+}
+
+.icon-close {
+  display: none;
+}
+
+.icon-menu {
+  display: block;
+}
+
+.header__burger.active .icon-close {
+  display: block;
+}
+.header__burger.active .icon-menu {
+  display: none;
+}
+
+.header__burger:hover {
+  background-color: #d8d8d8;
+}
+
+.hero {
+  background-image: url("../images/hero-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 180px 20px 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero__title {
+  margin-bottom: 70px;
+  padding: 0 20px;
+  font-size: 60px;
+  font-weight: 700;
+  max-width: 1180px;
+  text-align: center;
+  line-height: 130%;
+}
+
+.hero__description {
+  margin: 0 auto 40px;
+  font-size: 30px;
+  font-weight: 500;
+  max-width: 1180px;
+  padding: 0 20px;
+  text-align: center;
+  line-height: 130%;
+}
+
+.hero__description strong {
+  font-weight: 700;
+}
+
+.hero__list {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 42px;
+}
+
+.hero__item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.hero__button {
+  margin: 0 auto;
+}
+
+.footer {
+  height: 100vh;
+}
+
+@media screen and (max-width: 1100px) {
+  .header__menu-list {
+    gap: 20px;
+  }
+  .header__menu-link {
+    font-size: 17px;
+  }
+  .header__tel-number {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 970px) {
+  .header__logo {
+    width: 152px;
+  }
+  .header__menu-list {
+    gap: 15px;
+  }
+  .hero__title {
+    font-size: 55px;
+  }
+}
+@media screen and (max-width: 930px) {
+  .header__tel-number {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .header__container {
+    justify-content: center;
+  }
+  .header__burger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header__menu {
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .header__menu.active {
+    opacity: 1;
+    pointer-events: all;
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    background-color: white;
+    padding: 50px 20px;
+  }
+  .header__menu.active .header__menu-list {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .header__menu.active .header__menu-item {
+    text-align: center;
+  }
+  .header__menu-link {
+    font-size: 20px;
+  }
+  .header__tel-number {
+    font-size: 24px;
+  }
+  .hero__title {
+    font-size: 50px;
+  }
+  .hero__description {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 775px) {
+  .hero__list {
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .button {
+    padding: 19px 18px;
+    line-height: 130%;
+  }
+  .hero__container {
+    padding: 150px 20px 50px;
+  }
+  .hero__title {
+    font-size: 35px;
+  }
+  .hero__description {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero__container {
+    padding: 130px 15px 50px;
+  }
+  .hero__description {
+    margin-bottom: 30px;
+  }
+  .hero__title {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .hero__item {
+    flex-direction: column;
+  }
+  .hero__item p {
+    text-align: center;
+  }
+}/*# sourceMappingURL=styles.css.map */
