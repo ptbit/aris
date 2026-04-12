@@ -9,7 +9,9 @@ body {
   line-height: 100%;
   color: #0e3461;
 }
-
+.no-scroll {
+  overflow: hidden;
+}
 .button {
   padding: 30px 50px;
   font-family: 'Montserrat Alternates';
@@ -814,27 +816,27 @@ body {
     flex-direction: column;
     gap: 10px;
   }
-  .footer__title{
+  .footer__title {
     text-align: center;
   }
   .footer__nav {
     align-items: center;
   }
-  .footer__left-text{
+  .footer__left-text {
     max-width: none;
     text-align: center;
   }
-  .footer__content{
+  .footer__content {
     flex-direction: column;
     align-items: center;
   }
-  .footer__left-bottom{
+  .footer__left-bottom {
     justify-content: center;
   }
-  .footer__politics{
+  .footer__politics {
     text-align: center;
   }
-  .footer__left-socials{
+  .footer__left-socials {
     justify-content: space-between;
   }
 }
@@ -932,8 +934,11 @@ body {
   }
 }
 @media screen and (max-width: 440px) {
-  .footer__nav{
+  .footer__nav {
     flex-direction: column;
     gap: 20px;
+  }
+  .form__tel-ico {
+    width: 50px;
   }
 }

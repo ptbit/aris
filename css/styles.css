@@ -11,6 +11,10 @@ body {
   color: #0e3461;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .button {
   padding: 30px 50px;
   font-family: "Montserrat Alternates";
@@ -948,5 +952,8 @@ body {
   .footer__nav {
     flex-direction: column;
     gap: 20px;
+  }
+  .form__tel-ico {
+    width: 50px;
   }
 }/*# sourceMappingURL=styles.css.map */

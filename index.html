@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/modal.css" />
   </head>
   <body>
     <header class="header">
@@ -70,7 +71,9 @@
               <p><strong>30+ років</strong> у молекулярній біології</p>
             </li>
           </ul>
-          <button class="hero__button button">Отримати безкоштовну консультацію</button>
+          <button class="hero__button button open-form-button">
+            Отримати безкоштовну консультацію
+          </button>
         </div>
       </section>
 
@@ -210,7 +213,9 @@
               </div>
             </div>
           </div>
-          <button class="why__button button">Отримати безкоштовну консультацію</button>
+          <button class="why__button button open-form-button">
+            Отримати безкоштовну консультацію
+          </button>
         </div>
       </section>
 
@@ -419,7 +424,9 @@
               </div>
             </div>
           </div>
-          <button class="why__button button">Отримати безкоштовну консультацію</button>
+          <button class="why__button button open-form-button">
+            Отримати безкоштовну консультацію
+          </button>
         </div>
       </section>
 
@@ -643,7 +650,35 @@
         </div>
       </div>
     </footer>
-
+    <div class="modal">
+      <div class="modal__overlay">
+        <div class="modal__content">
+          <button class="modal__close-btn">
+            <img src="./images/svg/x.svg" alt="close modal">
+          </button>
+          <h2 class="section-title modal__title">Замовлення зворотного дзвінка</h2>
+          <form class="footer__form modal__form" action="">
+            <div class="form__field modal__field">
+              <div class="form__tel-ico">
+                <img src="./images/svg/form-name.svg" alt="input name img" />
+              </div>
+              <input type="text" class="form__input" placeholder="Введіть ім’я" />
+            </div>
+            <div class="form__field modal__field">
+              <div class="form__tel-ico">
+                <img src="./images/svg/tel.svg" alt="input tel img" />
+              </div>
+              <input type="text" class="form__input" placeholder="Введіть телефон" />
+            </div>
+            <button class="form__button button" type="submit">Надіслати</button>
+            <div class="form__bottom">
+              <input type="checkbox" name="" id="aaa" />
+              <label for="aaa">Я приймаю умови передачі інформації</label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/swiper.js"></script>
