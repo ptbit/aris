@@ -51,3 +51,40 @@ document.addEventListener('keydown', (e) => {
     closeModal();
   }
 });
+
+const modalInner = document.querySelector('.modal__content');
+
+openFormButtons.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const type = btn.dataset.modal;
+
+    let template;
+
+    if (type === 'form') {
+      template = document.querySelector('#modal-form');
+    }
+
+    if (type === 'thanks') {
+      template = document.querySelector('#modal-thanks');
+    }
+
+    if (template) {
+      modalInner.innerHTML = `
+        <button class="modal__close-btn">
+          <img src="./images/svg/x.svg" alt="close modal">
+        </button>
+        ${template.innerHTML}
+      `;
+
+      modalInner.querySelector('.modal__close-btn').addEventListener('click', closeModal);
+    }
+
+    openModal();
+  });
+});
+
+const callBackForm = document.querySelector('.call-back__form');
+
+if (callBackForm) {
+  callBackForm.addEventListener('submit', (e) => e.preventDefault());
+}
