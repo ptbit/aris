@@ -10,10 +10,6 @@ body {
   color: #0e3461;
 }
 
-footer {
-  background-color: rgb(212, 212, 201);
-}
-
 .button {
   padding: 30px 50px;
   font-family: 'Montserrat Alternates';
@@ -468,13 +464,13 @@ footer {
   gap: 20px;
   flex-direction: column;
 }
-.call-back__field {
+.form__field {
   display: flex;
   border-radius: 50px;
   border: 2px solid #fd9601;
   overflow: hidden;
 }
-.call-back__tel-ico {
+.form__tel-ico {
   width: 80px;
   height: 80px;
   background-color: #fd9601;
@@ -487,7 +483,7 @@ footer {
     height: 30px;
   }
 }
-.call-back__input {
+.form__input {
   flex: 1;
   border: none;
   height: 80px;
@@ -514,16 +510,155 @@ footer {
   margin-left: -60px;
 }
 
-.can-help__title{
+.can-help__title {
   margin-top: 80px;
 }
 // **************** FOOTER ****************
 
 .footer {
-  height: 50vh;
+  border-radius: 200px 200px 0px 0px;
+  background-image: url('../images/call-back-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container {
+}
+.footer__container {
+  padding-bottom: 40px;
+}
+.footer__title {
+  margin-bottom: 50px;
+}
+.footer__content {
+  display: flex;
+  gap: 80px;
+  margin-bottom: 50px;
+}
+.footer__left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.footer__left-text {
+  max-width: 450px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+}
+.footer__left-text.orange {
+  max-width: none;
+  color: #fd9601;
+}
+.footer__left-bottom {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__left-bottom-left {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.footer__left-tel {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 130%;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: #fd9601;
+  }
+}
+.footer__left-socials {
+  display: flex;
+  gap: 15px;
+}
+.footer__left-social {
+}
+.footer__left-social-link {
+}
+.footer__pencil {
+  position: relative;
+  bottom: 80px;
+  margin-bottom: -80px;
+}
+.footer__right {
+}
+.footer__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+  height: 100%;
+}
+.form__field {
+}
+.form__tel-ico {
+}
+.form__input {
+}
+.form__button {
+}
+.button {
+}
+.footer__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.footer__nav {
+  display: flex;
+  gap: 40px;
+}
+.footer__logo {
+}
+.footer__menu-list {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.footer__menu-item {
+}
+.footer__menu-link {
+  font-family: 'Montserrat Alternates';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+}
+.footer__politics {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #444444;
 }
 
 // **************** MEDIA ****************
+@media screen and (max-width: 1300px) {
+  .call-back__right {
+    left: 0px;
+    margin-left: -30px;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .footer {
+    border-radius: 150px 150px 0px 0px;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .call-back__right {
+    display: none;
+  }
+  .footer__content {
+    gap: 30px;
+  }
+  .footer__pencil {
+    display: none;
+  }
+}
 @media screen and (max-width: 1100px) {
   .header__menu-list {
     gap: 20px;
@@ -553,6 +688,9 @@ footer {
   .can-help__item {
     width: 48%;
   }
+  .footer {
+    border-radius: 100px 100px 0px 0px;
+  }
 }
 @media screen and (max-width: 970px) {
   .header__logo {
@@ -563,6 +701,12 @@ footer {
   }
   .hero__title {
     font-size: 55px;
+  }
+  .call-back__img {
+    width: 100%;
+    img {
+      width: 100%;
+    }
   }
 }
 @media screen and (max-width: 930px) {
@@ -642,13 +786,56 @@ footer {
   }
   .reviews__list {
     flex-direction: column;
+    align-items: center;
   }
   .reviews__item {
     width: 100%;
+    max-width: 400px;
     iframe {
       width: 100%;
       height: 350px;
     }
+  }
+  .call-back__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .call-back__img {
+    max-width: 440px;
+  }
+  .call-back__title,
+  .call-back__text {
+    text-align: center;
+  }
+  .footer {
+    border-radius: 50px 50px 0px 0px;
+  }
+  .footer__menu-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer__title{
+    text-align: center;
+  }
+  .footer__nav {
+    align-items: center;
+  }
+  .footer__left-text{
+    max-width: none;
+    text-align: center;
+  }
+  .footer__content{
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__left-bottom{
+    justify-content: center;
+  }
+  .footer__politics{
+    text-align: center;
+  }
+  .footer__left-socials{
+    justify-content: space-between;
   }
 }
 @media screen and (max-width: 800px) {
@@ -678,10 +865,10 @@ footer {
   }
 }
 @media screen and (max-width: 700px) {
-  .button {
-    padding: 19px 18px;
-    line-height: 130%;
-  }
+  // .button {
+  //   padding: 19px 18px;
+  //   line-height: 130%;
+  // }
   .hero__container {
     padding: 150px 20px 50px;
   }
@@ -733,5 +920,20 @@ footer {
   .why__item {
     flex-direction: column;
     align-items: center;
+  }
+  .form__tel-ico {
+    width: 70px;
+  }
+  .form__input {
+    width: 100%;
+  }
+  .call-back__details {
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .footer__nav{
+    flex-direction: column;
+    gap: 20px;
   }
 }
