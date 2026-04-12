@@ -15,7 +15,7 @@ footer {
 }
 
 .button {
-  padding: 33px 50px;
+  padding: 30px 50px;
   font-family: 'Montserrat Alternates';
   font-style: normal;
   font-weight: 700;
@@ -381,6 +381,7 @@ footer {
 }
 .can-help__item {
   display: flex;
+  flex: 1;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
@@ -424,10 +425,102 @@ footer {
   }
 }
 
+// ************** CALL-BACK **************
+.call-back {
+  background-image: url('../images/call-back-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.call-back__content {
+  display: flex;
+  gap: 50px;
+}
+.call-back__details {
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+}
+.call-back__img {
+}
+.section-title {
+}
+.call-back__title {
+}
+.call-back__text {
+  color: #222222;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  span {
+    color: #fd9601;
+  }
+}
+.call-back__form {
+  position: relative;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.call-back__left {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.call-back__field {
+  display: flex;
+  border-radius: 50px;
+  border: 2px solid #fd9601;
+  overflow: hidden;
+}
+.call-back__tel-ico {
+  width: 80px;
+  height: 80px;
+  background-color: #fd9601;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+  }
+}
+.call-back__input {
+  flex: 1;
+  border: none;
+  height: 80px;
+  font-family: 'Montserrat Alternates';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  color: #222222;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 0 20px 0 15px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  &:active {
+    background-color: white;
+  }
+}
+.call-back__button {
+}
+.button {
+}
+.call-back__right {
+  position: relative;
+  left: 70px;
+  margin-left: -60px;
+}
+
+.can-help__title{
+  margin-top: 80px;
+}
 // **************** FOOTER ****************
 
 .footer {
-  height: 100vh;
+  height: 50vh;
 }
 
 // **************** MEDIA ****************
