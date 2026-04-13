@@ -622,7 +622,13 @@
                 </div>
                 <input type="text" class="form__input" placeholder="Введіть телефон" />
               </div>
-              <button class="form__button button" type="submit">Надіслати</button>
+              <button
+                class="form__button button open-form-button"
+                data-modal="thanks"
+                type="submit"
+              >
+                Надіслати
+              </button>
             </form>
           </div>
         </div>
@@ -684,7 +690,7 @@
 
     <template id="modal-thanks">
       <h2 class="section-title modal__title">Дякуємо!</h2>
-      <p style="text-align: center">Ми зв'яжемось з вами найближчим часом</p>
+      <p class="modal__text">Ми зв'яжемось з вами найближчим часом</p>
     </template>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>

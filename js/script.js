@@ -78,7 +78,11 @@ openFormButtons.forEach((btn) => {
 
       modalInner.querySelector('.modal__close-btn').addEventListener('click', closeModal);
     }
+    const modalForm = document.querySelector('.modal__form');
 
+    if (modalForm) {
+      modalForm.addEventListener('submit', (e) => e.preventDefault());
+    }
     openModal();
   });
 });
@@ -88,3 +92,27 @@ const callBackForm = document.querySelector('.call-back__form');
 if (callBackForm) {
   callBackForm.addEventListener('submit', (e) => e.preventDefault());
 }
+const footerForm = document.querySelector('.footer__form');
+
+if (footerForm) {
+  footerForm.addEventListener('submit', (e) => e.preventDefault());
+}
+
+document.addEventListener('submit', (e) => {
+  if (e.target.matches('.modal__form')) {
+    e.preventDefault();
+
+    const template = document.querySelector('#modal-thanks');
+
+    modalContent.innerHTML = `
+      <button class="modal__close-btn">
+        <img src="./images/svg/x.svg" alt="close modal">
+      </button>
+      ${template.innerHTML}
+    `;
+
+    modalContent
+      .querySelector('.modal__close-btn')
+      .addEventListener('click', closeModal);
+  }
+});
